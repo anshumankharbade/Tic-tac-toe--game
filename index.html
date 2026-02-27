@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic-Tac-Toe game</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="msg-container hide">
-      <p id="msg">WINNER</p>
-      <button id="new-btn">New Game</button>
-    </div>
-    <main>
-      <h1>Tic Tac Toe</h1>
-      <div class="container">
-        <div class="game">
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <title>Tic-Tac-Toe • Notebook Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="msg-container hide">
+    <p id="msg">WINNER</p>
+    <button id="new-btn">New Game</button>
+  </div>
+  <main>
+    <h1>Tic Tac Toe</h1>
+    <div class="container">
+      <div class="game">
+        <button class="box" data-index="0"></button>
+        <button class="box" data-index="1"></button>
+        <button class="box" data-index="2"></button>
+        <button class="box" data-index="3"></button>
+        <button class="box" data-index="4"></button>
+        <button class="box" data-index="5"></button>
+        <button class="box" data-index="6"></button>
+        <button class="box" data-index="7"></button>
+        <button class="box" data-index="8"></button>
       </div>
-      <button id="reset-btn">Reset</button>
-    </main>
-    <script src="app.js"></script>
-  </body>
+    </div>
+    <button id="reset-btn">Reset</button>
+  </main>
+  <script src="app.js"></script>
+</body>
 </html>
