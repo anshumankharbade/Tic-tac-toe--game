@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-  <title>Tic-Tac-Toe • Notebook Edition</title>
+  <title>Tic-Tac-Toe • Notebook</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="msg-container hide">
     <p id="msg">WINNER</p>
@@ -16,6 +19,23 @@
   </div>
   <main>
     <h1>Tic Tac Toe</h1>
+
+    <!-- Player names & scores -->
+    <div class="players-panel">
+      <div class="player-input">
+        <label for="playerO">O</label>
+        <input type="text" id="playerO" placeholder="Player O" value="">
+      </div>
+      <div class="player-input">
+        <label for="playerX">X</label>
+        <input type="text" id="playerX" placeholder="Player X" value="">
+      </div>
+    </div>
+
+
+
+    <div class="turn-indicator" id="turn-indicator">O's turn</div>
+
     <div class="container">
       <div class="game">
         <button class="box" data-index="0"></button>
@@ -29,8 +49,18 @@
         <button class="box" data-index="8"></button>
       </div>
     </div>
-    <button id="reset-btn">Reset</button>
+
+    <div class="scoreboard">
+      <span id="scoreO">O: 0</span>
+      <span id="scoreX">X: 0</span>
+    </div>
+
+    <div class="action-buttons">
+      <button id="reset-btn">Reset Board</button>
+      <button id="reset-scores-btn">Reset Scores</button>
+    </div>
   </main>
   <script src="app.js"></script>
 </body>
+
 </html>
